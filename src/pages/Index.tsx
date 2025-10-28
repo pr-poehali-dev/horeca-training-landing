@@ -528,7 +528,7 @@ export default function Index() {
             </div>
           </div>
           <div className="border-t border-slate-800 pt-8 text-center text-slate-400">
-            <p>© 2024 ProService Academy. Все права защищены.</p>
+            <p>© 2025 ProService Academy. Все права защищены.</p>
           </div>
         </div>
       </footer>
