@@ -516,19 +516,16 @@ export default function Index() {
               <h4 className="font-semibold mb-4">Социальные сети</h4>
               <div className="flex gap-3">
                 <a href="#" className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
-                  <Icon name="Instagram" size={20} />
+                  <Icon name="Send" size={20} />
                 </a>
                 <a href="#" className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
-                  <Icon name="Facebook" size={20} />
-                </a>
-                <a href="#" className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
-                  <Icon name="Youtube" size={20} />
+                  <Icon name="MessageCircle" size={20} />
                 </a>
               </div>
             </div>
           </div>
           <div className="border-t border-slate-800 pt-8 text-center text-slate-400">
-            <p>© 2025 ProService Academy. Все права защищены.</p>
+            <p>© 2025 Hotel Academy. Все права защищены.</p>
           </div>
         </div>
       </footer>
