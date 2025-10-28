@@ -17,58 +17,58 @@ export default function Index() {
 
   const programs = [
     {
-      title: 'Управление рестораном',
-      duration: '3 месяца',
-      modules: [
-        'Основы ресторанного менеджмента',
-        'Управление персоналом и мотивация',
-        'Финансовый учет и контроль',
-        'Маркетинг и продвижение ресторана',
-        'Работа с поставщиками'
-      ]
-    },
-    {
       title: 'Гостиничный сервис премиум-класса',
-      duration: '2.5 месяца',
+      duration: '3 месяца',
       modules: [
         'Стандарты обслуживания 5*',
         'Управление номерным фондом',
         'Guest relations и работа с VIP-гостями',
         'Конфликтология и стрессоустойчивость',
-        'Системы бронирования'
+        'Системы бронирования и Revenue Management'
       ]
     },
     {
-      title: 'Индустрия красоты: управление салоном',
+      title: 'Управление отелем',
+      duration: '4 месяца',
+      modules: [
+        'Операционный менеджмент отеля',
+        'Финансовый контроль и бюджетирование',
+        'Управление персоналом и HR',
+        'Маркетинг и продвижение отеля',
+        'Работа с OTA и прямые продажи'
+      ]
+    },
+    {
+      title: 'Администратор гостиницы',
       duration: '2 месяца',
       modules: [
-        'Менеджмент салона красоты',
-        'Клиентский сервис премиум-уровня',
-        'Управление запасами и закупками',
-        'Продажи и допродажи услуг',
-        'Построение команды мечты'
+        'Front Office операции',
+        'Работа в PMS системах',
+        'Обработка бронирований и заселение',
+        'Работа с жалобами гостей',
+        'Кросс-продажи и допродажи'
       ]
     }
   ];
 
   const teachers = [
     {
-      name: 'Анна Волкова',
-      position: 'Эксперт HoReCa',
-      experience: '15 лет',
-      achievement: 'Управляющая сети из 12 ресторанов'
-    },
-    {
       name: 'Михаил Соколов',
-      position: 'Директор отеля 5*',
-      experience: '12 лет',
-      achievement: 'Лучший отель года по версии Forbes'
+      position: 'Генеральный директор отеля 5*',
+      experience: '15 лет',
+      achievement: 'Лучший отель года по версии Forbes Travel Guide'
     },
     {
-      name: 'Елена Красавина',
-      position: 'Бизнес-тренер',
+      name: 'Анна Петрова',
+      position: 'Эксперт по гостеприимству',
+      experience: '12 лет',
+      achievement: 'Операционный директор сети из 8 отелей'
+    },
+    {
+      name: 'Дмитрий Орлов',
+      position: 'Revenue Manager',
       experience: '10 лет',
-      achievement: 'Основатель сети премиум-салонов'
+      achievement: 'Увеличил доходность на 40% в 15 отелях'
     }
   ];
 
@@ -143,8 +143,8 @@ export default function Index() {
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <Icon name="GraduationCap" size={32} className="text-primary" />
-            <span className="text-2xl font-bold text-slate-900">ProService Academy</span>
+            <Icon name="Hotel" size={32} className="text-primary" />
+            <span className="text-2xl font-bold text-slate-900">Hotel Academy</span>
           </div>
           <nav className="hidden md:flex gap-6">
             <a href="#programs" className="text-slate-600 hover:text-primary transition-colors">Программы</a>
@@ -163,11 +163,11 @@ export default function Index() {
             <div className="animate-fade-in">
               <Badge className="mb-4">Профессиональное обучение</Badge>
               <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-                Станьте профи в HoReCa и индустрии красоты
+                Станьте профессионалом гостиничного бизнеса
               </h1>
               <p className="text-xl text-slate-600 mb-8">
-                Развивайте навыки премиум-сервиса с лучшими экспертами отрасли. 
-                Практические знания для карьерного роста.
+                Развивайте навыки премиального гостеприимства с лучшими экспертами индустрии. 
+                Практические знания для успешной карьеры в отельном бизнесе.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="text-lg px-8">
@@ -488,19 +488,19 @@ export default function Index() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Icon name="GraduationCap" size={28} />
-                <span className="text-xl font-bold">ProService Academy</span>
+                <Icon name="Hotel" size={28} />
+                <span className="text-xl font-bold">Hotel Academy</span>
               </div>
               <p className="text-slate-400">
-                Профессиональное обучение для индустрии HoReCa и красоты
+                Профессиональное обучение для гостиничного бизнеса
               </p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Программы</h4>
               <ul className="space-y-2 text-slate-400">
-                <li><a href="#" className="hover:text-white transition-colors">Ресторанный бизнес</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Гостиничный сервис</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Индустрия красоты</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Администратор отеля</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Управление отелем</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Премиум сервис</a></li>
               </ul>
             </div>
             <div>
