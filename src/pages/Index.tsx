@@ -18,7 +18,7 @@ export default function Index() {
   const programs = [
     {
       title: 'Гостиничный сервис премиум-класса',
-      duration: '3 месяца',
+      duration: '6 месяцев',
       modules: [
         'Стандарты обслуживания 5*',
         'Управление номерным фондом',
@@ -29,7 +29,7 @@ export default function Index() {
     },
     {
       title: 'Управление отелем',
-      duration: '4 месяца',
+      duration: '9 месяцев',
       modules: [
         'Операционный менеджмент отеля',
         'Финансовый контроль и бюджетирование',
@@ -40,7 +40,7 @@ export default function Index() {
     },
     {
       title: 'Администратор гостиницы',
-      duration: '2 месяца',
+      duration: '4 месяца',
       modules: [
         'Front Office операции',
         'Работа в PMS системах',
