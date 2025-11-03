@@ -56,19 +56,22 @@ export default function Index() {
       name: 'Михаил Соколов',
       position: 'Генеральный директор отеля 5*',
       experience: '15 лет',
-      achievement: 'Лучший отель года по версии Forbes Travel Guide'
+      achievement: 'Лучший отель года по версии Forbes Travel Guide',
+      photo: 'https://cdn.poehali.dev/projects/e6373ceb-51c6-4ed1-8b7d-e4976d6eda74/files/5374892f-ba06-4c4d-a26c-59d28d7bf66a.jpg'
     },
     {
       name: 'Анна Петрова',
       position: 'Эксперт по гостеприимству',
       experience: '12 лет',
-      achievement: 'Операционный директор сети из 8 отелей'
+      achievement: 'Операционный директор сети из 8 отелей',
+      photo: 'https://cdn.poehali.dev/projects/e6373ceb-51c6-4ed1-8b7d-e4976d6eda74/files/7d59efab-db4f-4d82-980c-19e8a4546ca0.jpg'
     },
     {
       name: 'Дмитрий Орлов',
       position: 'Revenue Manager',
       experience: '10 лет',
-      achievement: 'Увеличил доходность на 40% в 15 отелях'
+      achievement: 'Увеличил доходность на 40% в 15 отелях',
+      photo: 'https://cdn.poehali.dev/projects/e6373ceb-51c6-4ed1-8b7d-e4976d6eda74/files/86364755-e3be-4bc1-978b-7ab55454712b.jpg'
     }
   ];
 
@@ -293,9 +296,11 @@ export default function Index() {
             {teachers.map((teacher, idx) => (
               <Card key={idx} className="text-center hover-scale transition-transform">
                 <CardHeader>
-                  <div className="w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Icon name="User" size={48} className="text-white" />
-                  </div>
+                  <img 
+                    src={teacher.photo} 
+                    alt={teacher.name}
+                    className="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg"
+                  />
                   <CardTitle className="text-2xl">{teacher.name}</CardTitle>
                   <CardDescription className="text-base">{teacher.position}</CardDescription>
                 </CardHeader>
